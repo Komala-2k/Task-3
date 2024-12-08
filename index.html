@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz Categories</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-links">
+            <a href="#joke-section" class="nav-link active" data-section="joke">Random Joke</a>
+            <a href="#quiz-section" class="nav-link" data-section="quiz">Programming Quiz</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="joke-section" class="section active">
+            <div id="joke-container">
+                <p id="joke-text">Loading joke...</p>
+                <div id="joke-gif" class="gif-container">
+                    <!-- GIF will be displayed here -->
+                </div>
+                <button id="new-joke-btn">Get New Joke</button>
+            </div>
+        </section>
+
+        <section id="quiz-section" class="section">
+            <div class="quiz-categories">
+                <div class="category-grid">
+                    <div class="category-card" onclick="window.location.href='html-quiz.html'" style="--card-index: 0">
+                        <div class="category-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        </div>
+                        <h3>HTML Quiz</h3>
+                        <p>Test your HTML knowledge with questions about structure, semantics, and best practices.</p>
+                    </div>
+
+                    <div class="category-card" onclick="window.location.href='css-quiz.html'" style="--card-index: 1">
+                        <div class="category-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        </div>
+                        <h3>CSS Quiz</h3>
+                        <p>Challenge yourself with questions about styling, layouts, and animations.</p>
+                    </div>
+
+                    <div class="category-card" onclick="window.location.href='js-quiz.html'" style="--card-index: 2">
+                        <div class="category-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        </div>
+                        <h3>JavaScript Quiz</h3>
+                        <p>Test your JS skills with functions, objects, and modern features.</p>
+                    </div>
+
+                    <div class="category-card" onclick="window.location.href='general-quiz.html'" style="--card-index: 3">
+                        <div class="category-icon">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/devicon/devicon-original.svg" alt="General">
+                        </div>
+                        <h3>General Programming</h3>
+                        <p>Mix of questions covering various programming concepts and best practices.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

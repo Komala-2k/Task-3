@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="quiz">
+            <div class="quiz-header">
+                <h1>CSS Quiz</h1>
+                <div class="progress-info">
+                    <div id="progress-bar">
+                        <div id="progress"></div>
+                    </div>
+                    <div class="quiz-stats">
+                        <span id="current-question">Question 1/5</span>
+                        <span id="score">Score: 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-content">
+                <div class="question-section">
+                    <h2 id="question-text"></h2>
+                    <div class="options-container">
+                        <form id="quiz-form">
+                            <!-- Options will be inserted here -->
+                        </form>
+                    </div>
+                </div>
+                
+                <div id="feedback" class="feedback-section" style="display: none;">
+                    <div class="feedback-content">
+                        <div id="feedback-text"></div>
+                        <div id="explanation-text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-footer">
+                <button id="check-btn" class="quiz-btn">Check Answer</button>
+                <button id="next-btn" class="quiz-btn" style="display: none;">Next Question</button>
+            </div>
+        </div>
+
+        <div id="results" class="results-container" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <div id="final-score"></div>
+            <div id="final-message"></div>
+            <button onclick="location.href='index.html'" class="home-btn">Back to Home</button>
+        </div>
+    </div>
+    <script src="css-quiz.js"></script>
+</body>
+</html>
